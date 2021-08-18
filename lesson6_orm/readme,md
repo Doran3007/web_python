@@ -1,0 +1,35 @@
+DETAIL
+This directory is easy orm for sqlite bd
+Create for study
+-------------------------------------
+Prerequisites
+- Python - 3.8+
+- virtualenv
+- Pip
+Installing
+
+Make a new virtualenv (you may as well not if you know what you're doing)
+$ virtualenv -p python3 venv
+
+Clone this repo
+$ git clone (url for this repo)
+
+Install requirements
+$ pip install -r requirements.txt
+----------------------------------------------
+Using
+SELECT:
+>>> Class.objects.select('column1', 'column2', 'column3',.... 'column_n') 
+
+INSERT:
+>>> data_for_insert = [
+    {"column1": "data1", "column2": "data3", "column3": data5},
+    {"column1": "data2", "column2": "data4", "column3": data6}
+]
+>>> Class.objects.insert(rows=data_for_insert)
+
+UPDATE:
+>>> Class.objects.update(
+        new_data={'column1': data1, 'column2': 'data2'}
+    )
+-------------------------------------
